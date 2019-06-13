@@ -1,0 +1,52 @@
+server:
+  port: 8088
+  servlet:
+    path: /
+
+logging:
+  level:
+    cn.itcast: debug
+#    org.springframework: debug
+
+#    learning: debug
+    file: log/app-user.log
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/yun6
+    username: root
+    password: 123456
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+ #  mapper-locations: mapper/*.xml
+  type-aliases-package: com.itcast.pojo
+
+
+
+
+
+
+
+    #jdbc:
+
+
+#  driverClassName: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://127.0.0.1:3306/yun6
+#  username: root
+#  password: 123456
+#
+#
+#spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/views/
+
+
+
+
+
+
+#      suffix: .jsp
